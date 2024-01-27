@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="admin.css">
+    <title>Admin Panel</title>
+</head>
+<body>
+    <header class="title">
+        <p class="title-name">SUGAR X SALT</p>
+        <p class="title-place">MNL</p>
+        <p class="title-message">SWEET TREATS FOR EVERY OCCASION.</p>
+    </header>
+
+    <nav class="sticky-nav-bar">
+        <div class="logout signOutBtn">
+                <a href="."><img src="./assets/img/logout-button.png" class="logout-button" alt=""></a>
+        </div>
+        <div class="dashboard">
+                <a href="#section-1" class="nav-buttons">Dashboard</a>
+        </div>
+        <div class="orders">
+                <a href="#section-2" class="nav-buttons">Orders</a>
+        </div>
+        <div class="inventory">
+                <a href="#section-3" class="nav-buttons">Inventory</a>
+        </div>
+    </nav>
+    
+
+    <main>
+        <section class="dashboard-page" id="section-1">
+            <div class="section-title">
+                <h1 class="section-title-text">Dashboard</h1>
+            </div>
+
+            <!-- dashboard stats -->
+
+            <div class="dashboard-total-stats">
+                <div class="total-customers">
+                    <div class="customer-stats">
+                        <h1 class="dashboard-amount-1st customer-count">0</h1>
+                        <p class="dashboard-text-1st">Customers</p>
+                    </div>
+                    <img src="./assets/img/customer-icon.png" alt="" class="dashboard-icons">
+                </div>
+                <div class="total-orders">
+                    <div class="order-stats">
+                        <h1 class="dashboard-amount-1st order-count">0</h1>
+                        <p class="dashboard-text-1st">Orders</p>
+                    </div>
+                    <img src="./assets/img/order-icon.png" alt="" class="dashboard-icons">
+                </div>
+                <div class="total-daily-income">
+                    <div class="daily-icon-stats">
+                        <h1 class="dashboard-amount-2nd weekly-income">PHP 0</h1>
+                        <p class="dashboard-text-2nd">Weekly Income</p>
+                    </div>
+                    <img src="./assets/img/income-icon.png" alt="" class="dashboard-icons">
+                </div>
+                <div class="total-income">
+                    <div class="daily-icon-stats">
+                        <h1 class="dashboard-amount-2nd total-income-php">PHP 0</h1>
+                        <p class="dashboard-text-2nd">Total Income</p>
+                    </div>
+                    <img src="./assets/img/income-icon.png" alt="" class="dashboard-icons">
+                </div>
+            </div>
+            
+            <!-- dashboard items -->
+
+            <div class="dashboard-items">
+                <div class="dashboard-items-container">
+                    <h1 class="dashboard-items-title">Items</h1>
+                </div>
+                <div class="dashboard-product-container">
+                    <div class="dashboard-product-1">
+                        <div class="dashboard-products-img-container">
+                            <img src="./assets/img/product-1.png" alt="" class="dashboard-products-img">
+                        </div>
+                        <div class="dashboard-product-info-container">
+                            <span class="product-name">Carrot Cupcake</span>
+                            <p class="product-sold">Products Sold: <span class="product-sold-quantity carrot-cupcake-sold">N/A</span></p>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-product-2">
+                        <div class="dashboard-products-img-container">
+                            <img src="./assets/img/product-2.png" alt="" class="dashboard-products-img">
+                        </div>
+                        <div class="dashboard-product-info-container">
+                            <span class="product-name">Crinkles</span>
+                            <p class="product-sold">Products Sold: <span class="product-sold-quantity crinkles-sold">N/A</span></p>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-product-3">
+                        <div class="dashboard-products-img-container">
+                            <img src="./assets/img/product-3.png" alt="" class="dashboard-products-img">
+                        </div>
+                        <div class="dashboard-product-info-container">
+                            <span class="product-name">Blueberry Muffin</span>
+                            <p class="product-sold">Products Sold: <span class="product-sold-quantity blueberry-muffin-sold">N/A</span></p>
+                        </div>
+                    </div>
+
+                    <div class="dashboard-product-4">
+                        <div class="dashboard-products-img-container">
+                            <img src="./assets/img/product-4.png" alt="" class="dashboard-products-img">
+                        </div>
+                        <div class="dashboard-product-info-container">
+                            <span class="product-name">Tofu Dumplings</span>
+                            <p class="product-sold">Products Sold: <span class="product-sold-quantity tofu-dumplings-sold">N/A</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="orders-page" id="section-2">
+            <div class="section-title">
+                <h1 class="section-title-text">Orders</h1>
+            </div>
+            
+            <!-- orders stats -->
+
+            <div class="orders-total-stats">
+                <div class="new-orders">
+                    <h1 class="orders-amount new-count">0</h1>
+                    <p class="orders-text">New Orders</p>
+                </div>
+
+                <div class="pending-orders">
+                    <h1 class="orders-amount-2 pending-count">0</h1>
+                    <p class="orders-text-2">Pending Orders</p>
+                </div>
+
+                <div class="delivered-orders">
+                    <h1 class="orders-amount delivered-count">0</h1>
+                    <p class="orders-text">Delivered Orders</p>
+                </div>
+            </div>
+
+            <!-- orders table -->
+
+            <div class="orders-table-container">
+                <table class="orders-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Order Date</th>
+                            <th>Product Name</th>
+                            <th>Note</th>
+                            <th>Quantity</th>
+                            <th>Total Price</th>
+                            <th>Number</th>
+                            <th>Address</th>
+                            <th>User ID</th>
+                            <th>Username</th>
+                            <th>Payment Method</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody class="order-table">
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="inventory-page" id="section-3">
+            <div class="section-title">
+                <h1 class="section-title-text">Inventory</h1>
+            </div>
+
+            <!-- inventory table -->
+
+            <div class="orders-table-container">
+                <table class="orders-table">
+                    <thead>
+                        <tr>
+                            <th>Item ID</th>
+                            <th>Item Name</th>
+                            <th>Unit of Measure</th>
+                            <th>Item Quantity</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody class="inventory-table">
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </main>
+    <script type="module" src="admin.js"></script>
+</body>
+</html>

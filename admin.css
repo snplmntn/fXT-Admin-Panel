@@ -1,0 +1,382 @@
+:root {
+    --color-main: #db8770;
+  }
+  
+  @font-face {
+    font-family: "Bobby Jones";
+    src: url("./assets/fonts/bobby-jones-regular.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Bobby Jones Condensed";
+    src: url("./assets/fonts/bobby-jones-condensed.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Bobby Jones Soft";
+    src: url("./assets/fonts/bobby-jones-soft-regular.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "BlueBerry";
+    src: url("./assets/fonts/Blueberry\ .ttf") format("truetype");
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+  
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Bobby Jones Condensed", sans-serif;
+    font-weight: 300;
+    color: #444;
+  }
+
+  .title {
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  
+  .title-name {
+    font-family: "BlueBerry";
+    font-size: 3.25rem;
+    font-weight: 400;
+    color: var(--color-main);
+    margin-bottom: 0;
+    padding-bottom: 0;
+    letter-spacing: 0.3rem;
+  }
+  
+  .title-place {
+    font-size: 2.8rem;
+    color: #637072;
+  }
+  
+  .title-message {
+    font-size: 1.5rem;
+    color: #b83c3c;
+  }
+
+  /* sticky nav bar */
+
+  .sticky-nav-bar {
+    height: 5rem;
+    background-color:var(--color-main);
+    border-top: 4px solid #000;
+    border-bottom: 4px solid #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+  }
+
+  .sticky-nav-bar > div > a {
+    text-decoration: none;
+  }
+
+  .logout-button {
+    height: 2.5rem;
+    cursor: pointer;
+  }
+
+  .nav-buttons {
+    font-size: 1.5rem;
+    color: black;
+  }
+
+  main {
+    background-color: rgb(254,241,240);
+  }
+
+  .section-title {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: rgb(254,254,255);
+  }
+
+  .section-title-text {
+    color: black;
+    font-family: 'Bobby Jones Soft';
+  }
+
+  /* dashboard page */
+
+  .dashboard-page {
+    height: 105vh;
+  }
+
+  /* dashboard stats */
+
+  .dashboard-total-stats {
+    background-color: rgb(254,240,241);
+    height: 15rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Bobby Jones Soft';
+  }
+
+  .dashboard-total-stats > div {
+    height: 10rem;
+    width: 17rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .total-customers, 
+  .total-orders {
+    background-color: var(--color-main);
+  }
+
+  .total-daily-income, 
+  .total-income {
+    background-color: rgb(184,61,61);
+  }
+  
+  .dashboard-amount-1st {
+    color: black;
+    font-size: 4rem;
+  }
+
+  .dashboard-amount-2nd {
+    color: white;
+    font-size: 2.9rem;
+  }
+
+  .dashboard-text-1st {
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  .dashboard-text-2nd {
+    color: white;
+    font-size: 1.2rem;
+    padding-top: 1.2rem;
+  }
+
+  .dashboard-icons {
+    height: 5rem;
+  }
+
+  /* dashboard items */
+
+  .dashboard-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-top: 1.5rem;
+    padding-bottom: 2rem;
+    background-color: rgb(254,254,255);
+  }
+
+  .dashboard-items-container {
+    width: 100%;
+    padding-right: 2rem;
+  }
+
+  .dashboard-items-title {
+    color: black;
+    font-size: 2rem;
+    font-family: 'BlueBerry';
+    text-align: end;
+  }
+
+  .dashboard-product-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    gap: 4rem;
+  }
+
+  .dashboard-product-1, 
+  .dashboard-product-2, 
+  .dashboard-product-3, 
+  .dashboard-product-4 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .dashboard-products-img-container {
+    height: 15rem;
+    width: 15rem;
+    background-color: #db8770;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .dashboard-products-img {
+    height: 90%;
+  }
+
+  .dashboard-product-info-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .product-name {
+    font-family: 'BlueBerry';
+    font-size: 1.5rem;
+    color: black;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .product-sold, 
+  .number-of-stocks {
+    font-size: 1.3rem;
+  }
+
+  .product-sold > span, 
+  .number-of-stocks > span {
+    font-weight: 1000;
+    color:#b83c3c
+  }
+
+  /* orders page */
+
+  .orders-page {
+    height: 120vh;
+  }
+
+  .orders-total-stats {
+    background-color: rgb(254,240,241);
+    height: 15rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    font-family: 'Bobby Jones Soft';
+  }
+
+  .orders-total-stats > div {
+    height: 10rem;
+    width: 17rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .orders-total-stats > div:nth-child(2n + 1) {
+    background-color: var(--color-main);
+  }
+
+  .orders-total-stats > div:nth-child(2) {
+    background-color: rgb(184,61,61);
+  }
+
+  .orders-amount {
+    color: black;
+    font-size: 4rem;
+  }
+
+  .orders-text {
+    color: black;
+    font-size: 1.2rem;
+  }
+
+  .orders-amount-2 {
+    color: white;
+    font-size: 4rem;
+  }
+
+  .orders-text-2 {
+    color: white;
+    font-size: 1.2rem;
+  }
+
+  /* orders table */
+
+  .orders-table-container {
+    overflow-y: scroll;
+    height: 37rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .orders-table {
+    border-collapse: collapse;
+    margin: 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.5rem 0.5rem 0 0;
+    height: 50rem;
+    width: 100%;
+  }
+
+  .orders-table-container::-webkit-scrollbar {
+    width: 0.4rem; /* Set the width of the scrollbar */
+    background-color: #f1f1f1; /* Set the background color of the scrollbar track */
+  }
+  
+  .orders-table-container::-webkit-scrollbar-thumb {
+    background-color: #888; /* Set the background color of the scrollbar thumb */
+  }
+  
+  .orders-table-container::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Set the background color of the scrollbar thumb on hover */
+  }
+
+  .orders-table thead tr {
+    background-color: #db8770;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+    
+  }
+  
+  .orders-table th,
+  .orders-table td {
+    padding: 1rem 1rem;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .orders-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+
+  .orders-table tbody tr:nth-of-type(odd) {
+    background-color: #ffffff;
+  }
+
+  .orders-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+
+  .orders-table tbody tr:last-of-type {
+    border-bottom: 2px solid #db8770;
+  }
+
+  /* inventory page */
+
+  .inventory-page {
+    height: 100vh;
+  }
+
+
+  

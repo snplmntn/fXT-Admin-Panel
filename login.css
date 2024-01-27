@@ -1,0 +1,340 @@
+:root {
+    --color-main: #db8770;
+  }
+  
+  @font-face {
+    font-family: "Bobby Jones";
+    src: url("./assets/fonts/bobby-jones-regular.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Bobby Jones Condensed";
+    src: url("./assets/fonts/bobby-jones-condensed.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "Bobby Jones Soft";
+    src: url("./assets/fonts/bobby-jones-soft-regular.otf") format("opentype");
+  }
+  
+  @font-face {
+    font-family: "BlueBerry";
+    src: url("./assets/fonts/Blueberry\ .ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Alice";
+    src: url("./assets/fonts/Alice-Regular.ttf") format("truetype");
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url("./assets/img/Login\ &\ Signup\ Image.png");
+    background-size: cover;
+    font-family: "Bobby Jones Condensed", sans-serif;
+    font-weight: 300;
+    color: #444;
+  }
+  
+  /* GENERAL ELEMENTS */
+  .section {
+    padding: 15rem 3rem;
+    border-top: 1px solid #ddd;
+    transition: transform 1s, opacity 1s;
+  }
+  
+  /* TITLE */
+  .title {
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  
+  .title-name {
+    font-family: "BlueBerry";
+    font-size: 3.25rem;
+    font-weight: 400;
+    color: var(--color-main);
+    margin-bottom: 0;
+    padding-bottom: 0;
+    letter-spacing: 0.3rem;
+  }
+  
+  .title-place {
+    font-size: 2.8rem;
+    color: #637072;
+  }
+  
+  .title-message {
+    font-size: 1.5rem;
+    color: #b83c3c;
+  }
+  
+  /* NAV */
+  .nav-section {
+    background-color: var(--color-main);
+    border-top: 4px solid #000;
+    border-bottom: 4px solid #000;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .nav-buttons {
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    flex: 2;
+  }
+  
+  .nav-button {
+    cursor: pointer;
+    color: #000;
+    margin: 0 2rem;
+  }
+
+  .nav-left {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-search {
+    cursor: pointer;
+    height: 2.5rem;
+    width: 2.5rem;
+    background: url("./assets/img/search\ interface\ symbol.png");
+    background-size: cover;
+  }
+
+  .nav-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+  }
+
+  .nav-right > * {
+    margin-left: 2rem;
+  }
+
+  .nav-cart {
+    cursor: pointer;
+    height: 2.4rem;
+    width: 2.4rem;
+    background: url("./assets/img/shopping-bag.png");
+    background-size: cover;
+  }
+  
+  .nav-account {
+    cursor: pointer;
+    height: 2.5rem;
+    width: 2.5rem;
+    background: url("./assets/img/profile-user.png");
+    background-size: cover;
+  }
+
+  
+.nav-button:hover {
+  color: #efefef;
+}
+
+.container{
+  margin: auto;
+  top: 100px;
+  background-color: #db8770;
+  border: 2px solid transparent;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 1);
+  position: relative;
+  overflow: hidden;
+  width: 768px;
+  max-width: 100%;
+  min-height: 480px;
+}
+
+.container p{
+  color:#FFAF99;
+  font-size: 20px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  margin: 20px 0;
+}
+
+.container span{
+  font-size: 12px;
+}
+
+.container a{
+  color: #000000;
+  font-size: 13px;
+  text-decoration: none;
+  margin: 15px 0 10px;
+}
+
+.container button{
+  font-family: "Bobby Jones Condensed", sans-serif;
+  background-color: #B83C3C;
+  color: #000000;
+  font-size: 20px;
+  padding: 10px 45px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.container button.hidden{
+  background-color: #FFAF99;
+  border-color: #DB8770;
+}
+
+.container form{
+  background-color: #DB8770;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  height: 100%;
+}
+
+.container input{
+  font-family: "Alice", sans-serif;
+  background-color: #eee;
+  border-color: #B83C3C;
+  border-width: 5px;
+  margin: 8px 0;
+  padding: 10px 15px;
+  font-size: 15px;
+  width: 100%;
+  border-radius: 10px
+}
+
+.form-container{
+  
+  color:#000000;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  transition: all 0.6s ease-in-out;
+  font-family: "BlueBerry";
+  font-size: 10px;
+}
+
+.sign-in{
+  left: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.container.active .sign-in{
+  transform: translateX(100%);
+}
+
+.sign-up{
+  left: 0;
+  width: 50%;
+  opacity: 0;
+  z-index: 1;
+}
+
+.container.active .sign-up{
+  transform: translateX(100%);
+  opacity: 1;
+  z-index: 5;
+  animation: move 0.6s;
+}
+
+@keyframes move{
+  0%, 49.99%{
+      opacity: 0;
+      z-index: 1;
+  }
+  50%, 100%{
+      opacity: 1;
+      z-index: 5;
+  }
+}
+
+
+.toggle-container{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: all 0.6s ease-in-out;
+  border-radius: 50px 0 0 50px;
+  z-index: 1000;
+}
+
+.container.active .toggle-container{
+  transform: translateX(-100%);
+  border-radius: 0 50px 50px 0;
+}
+
+.toggle{
+  
+  background-color: #B83C3C;
+  height: 100%;
+  color: #fff;
+  position: relative;
+  left: -100%;
+  height: 100%;
+  width: 200%;
+  transform: translateX(0);
+  transition: all 0.6s ease-in-out;
+}
+
+.container.active .toggle{
+  transform: translateX(50%);
+}
+
+.toggle-panel{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 50px;
+  text-align: center;
+  top: 0;
+  transform: translateX(0);
+  transition: all 0.6s ease-in-out;
+}
+
+.toggle-left{
+  transform: translateX(-200%);
+}
+
+.container.active .toggle-left{
+  transform: translateX(0);
+}
+
+.toggle-right{
+  right: 0;
+  transform: translateX(0);
+}
+
+.container.active .toggle-right{
+  transform: translateX(200%);
+}
